@@ -1,0 +1,1 @@
+<footer class="perso_bgBlue text-center text-white p-3">© Thomas Niaux - ETNA Bachelor développeur concepteur d'application</footer>

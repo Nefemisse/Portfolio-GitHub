@@ -16,13 +16,13 @@ if (isset($_POST['mail']) && isset($_POST['objet']) && ($_POST['message'])) {
 <?php } ?>
 
 <div class="container text-center">
-    <?= formatageTitre("Mes informations personnelles :") ?>
+    <h2 class="m-5 perso_colorBlueLight p-3">Mes informations personnelles :</h2>
     <table class="table table-borderless">
         <thead>
             <tr>
-                <td><img src="../sources/icones/telIcone.png" width="100px" alt="" srcset=""></td>
-                <td><img src="../sources/icones/facebookIcone.png" width="100px" alt="" srcset=""></td>
-                <td><img src="../sources/icones/youtubeIcone.png" width="100px" alt="" srcset=""></td>
+                <td><img src="../sources/icones/telIcone.png" width="73px" alt="" srcset=""></td>
+                <td><img src="../sources/icones/facebookIcone.png" width="73px" alt="" srcset=""></td>
+                <td><img src="../sources/icones/youtubeIcone.png" width="73px" alt="" srcset=""></td>
             </tr>
         </thead>
         <tbody>
@@ -55,7 +55,7 @@ if (isset($_POST['mail']) && isset($_POST['objet']) && ($_POST['message'])) {
             <label for="exampleFormControlTextarea1">Message :</label>
             <textarea class="form-control" id="message" name="message" placeholder="Entrez votre message..." rows="3"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Valider</button>
+        <button type="submit" class="btn btn-primary mb-1">Valider</button>
     </form>
 </div>
 

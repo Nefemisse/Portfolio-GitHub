@@ -8,6 +8,10 @@ body {
     font-weight: 600;
 }
 
+#blockPage_contact {
+    overflow-y: hidden;
+}
+
 h2 {
     border-bottom: solid 1px #1490d7 ;
 }
@@ -58,118 +62,6 @@ nav a:hover {
     background-image: linear-gradient(rgb(40,54,69), white);
 }
 
-.perso_btnIndex {
-    background-color: #1490d7;
-    font-size: 1.5rem;
-    animation-name: saut;
-    animation-duration: .5s;
-    position: relative;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-@keyframes saut{
-    0%{
-        transition: all 200ms ease-in;
-        transform: scale(1);
-    }
-    100%{
-        transition: all 200ms ease-in;
-        transform: scale(1.05);
-    }
-}
-
-.animationTemoignage1 {
-    animation-name: temoignage1;
-    animation-duration: 1s;
-    position: relative;
-}
-@keyframes temoignage1{
-    0%{
-        left: -1000px;
-        top: -1000px;
-    }
-    100%{
-        left: 0px;
-        top: 0px;
-    }
-}
-
-.animationTemoignage2 {
-    animation-name: temoignage2;
-    animation-duration: 1s;
-    position: relative;
-}
-@keyframes temoignage2{
-    0%{
-        top: -1000px;
-    }
-    100%{
-        top: 0px
-    }
-}
-
-.animationTemoignage3 {
-    animation-name: temoignage3;
-    animation-duration: 1s;
-    position: relative;
-}
-@keyframes temoignage3{
-    0%{
-        right: -1000px;
-        top: -1000px;
-    }
-    100%{
-        right: 0px;
-        top: 0px;
-    }
-}
-
-.animationTemoignage4 {
-    animation-name: temoignage4;
-    animation-duration: 1s;
-    position: relative;
-}
-@keyframes temoignage4{
-    0%{
-        left: -1000px;
-        bottom: -1000px;
-    }
-    100%{
-        left: 0px;
-        bottom: 0px;
-    }
-}
-
-.animationTemoignage5 {
-    animation-name: temoignage5;
-    animation-duration: 1s;
-    position: relative;
-}
-@keyframes temoignage5{
-    0%{
-        bottom: -1000px;
-    }
-    100%{
-        bottom: 0px
-    }
-}
-
-.animationTemoignage6 {
-    animation-name: temoignage6;
-    animation-duration: 1s;
-    position: relative;
-}
-@keyframes temoignage6{
-    0%{
-        right: -1000px;
-        bottom: -1000px;
-    }
-    100%{
-        right: 0px;
-        bottom: 0px
-    }
-}
-
 .perso_colorBlueLight {
     color: #1490d7;
 }
@@ -186,9 +78,134 @@ a:hover {
     color: #1490d7;
 }
 
+/* Animations */
+animations {
+    .perso_btnIndex {
+        background-color: #1490d7;
+        font-size: 1.5rem;
+        animation-name: saut;
+        animation-duration: .5s;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes saut{
+        0%{
+            transition: all 200ms ease-in;
+            transform: scale(1);
+        }
+        100%{
+            transition: all 200ms ease-in;
+            transform: scale(1.05);
+        }
+    }
+
+    .animationTemoignage1 {
+        animation-name: temoignage1;
+        animation-duration: 1s;
+        position: relative;
+    }
+    @keyframes temoignage1{
+        0%{
+            left: -1000px;
+            top: -1000px;
+        }
+        100%{
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+    .animationTemoignage2 {
+        animation-name: temoignage2;
+        animation-duration: 1s;
+        position: relative;
+    }
+    @keyframes temoignage2{
+        0%{
+            top: -1000px;
+        }
+        100%{
+            top: 0px
+        }
+    }
+
+    .animationTemoignage3 {
+        animation-name: temoignage3;
+        animation-duration: 1s;
+        position: relative;
+    }
+    @keyframes temoignage3{
+        0%{
+            right: -1000px;
+            top: -1000px;
+        }
+        100%{
+            right: 0px;
+            top: 0px;
+        }
+    }
+
+    .animationTemoignage4 {
+        animation-name: temoignage4;
+        animation-duration: 1s;
+        position: relative;
+    }
+    @keyframes temoignage4{
+        0%{
+            left: -1000px;
+            bottom: -1000px;
+        }
+        100%{
+            left: 0px;
+            bottom: 0px;
+        }
+    }
+
+    .animationTemoignage5 {
+        animation-name: temoignage5;
+        animation-duration: 1s;
+        position: relative;
+    }
+    @keyframes temoignage5{
+        0%{
+            bottom: -1000px;
+        }
+        100%{
+            bottom: 0px
+        }
+    }
+
+    .animationTemoignage6 {
+        animation-name: temoignage6;
+        animation-duration: 1s;
+        position: relative;
+    }
+    @keyframes temoignage6{
+        0%{
+            right: -1000px;
+            bottom: -1000px;
+        }
+        100%{
+            right: 0px;
+            bottom: 0px
+        }
+    }
+}
+
 /* Contact.php */
 
 .contact td, .contact a {
     text-decoration: none;
     color: #1490d7;
 }
+
+/* Footer */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
